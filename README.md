@@ -1,12 +1,13 @@
-- 👋 Hi, I’m @AlexMcLellan
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+# 4-Component Radiometer Simulation
 
-<!---
-AlexMcLellan/AlexMcLellan is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+This project is a Python simulation of a 4-component radiometer. It provides a simple model for calculating net radiation from the four primary components of solar and terrestrial radiation.
+
+## Usage
+
+To run the simulation, execute the `main.py` script:
+
+```bash
+python3 main.py
+```
+
+The script will print the individual radiation components and the calculated net radiation to the console.
