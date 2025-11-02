@@ -1,15 +1,21 @@
+import pandas as pd
 from radiometer.model import Radiometer
 
 def main():
     """Main function to run the radiometer simulation."""
-    # Example values for the four radiation components
-    shortwave_up = 100
-    shortwave_down = 500
-    longwave_up = 300
-    longwave_down = 200
+    # Define sensor location (e.g., Boulder, CO)
+    latitude = 40.0150
+    longitude = -105.2705
+
+    # Define a timestamp
+    timestamp = pd.Timestamp('2023-10-27 12:00:00', tz='America/Denver')
+
+    # Define atmospheric conditions
+    air_temperature = 15  # degrees Celsius
+    relative_humidity = 50  # percent
 
     # Create a Radiometer instance
-    radiometer = Radiometer(shortwave_up, shortwave_down, longwave_up, longwave_down)
+    radiometer = Radiometer(latitude, longitude, timestamp, air_temperature, relative_humidity)
 
     # Get the radiation components
     components = radiometer.get_components()
